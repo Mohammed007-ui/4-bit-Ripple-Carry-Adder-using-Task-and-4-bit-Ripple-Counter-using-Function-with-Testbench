@@ -1,13 +1,15 @@
 # 4-bit-Ripple-Carry-Adder-using-Task-and-4-bit-Ripple-Counter-using-Function-with-Testbench
-Aim:
+
+## Aim:
 To design and simulate a 4-bit Ripple Carry Adder using Verilog HDL with a task to implement the full adder functionality and verify its output using a testbench.
 To design and simulate a 4-bit Ripple Counter using Verilog HDL with a function to calculate the next state and verify its functionality using a testbench.
-
+##
 Apparatus Required:
 Computer with Vivado or any Verilog simulation software.
 Verilog HDL compiler.
 
 // Verilog Code
+~~~
 module ripple_carry_adder_4bit (
     input [3:0] A,      // 4-bit input A
     input [3:0] B,      // 4-bit input B
@@ -40,11 +42,11 @@ module ripple_carry_adder_4bit (
     assign Sum = sum_temp;
 
 endmodule
-
+~~~
 OUTPUT:![image](https://github.com/user-attachments/assets/d1efa589-9730-4bf6-8356-9c6507b18e6e)
 
-// Test bench for Ripple carry adder
-
+##// Test bench for Ripple carry adder
+~~~
 module ripple_carry_adder_4bit_tb;
 
     reg [3:0] A, B;
@@ -86,12 +88,12 @@ module ripple_carry_adder_4bit_tb;
     end
 
 endmodule
-
+~~~
 OUTPUT:![image](https://github.com/user-attachments/assets/95cbcc7a-5f4a-47b8-9b4e-661bafae9537)
 
 
 // Verilog Code ripple counter
-
+~~~
 module ripple_counter_4bit (
     input clk,           // Clock signal
     input reset,         // Reset signal
@@ -151,9 +153,10 @@ module ripple_counter_4bit_tb;
     end
 
 endmodule
+~~~
 OUTPUT:![image](https://github.com/user-attachments/assets/0fef766e-7eb7-423d-99cf-212f3e31c450)
 
-Conclusion:
+###Conclusion:
 The 4-bit Ripple Carry Adder was successfully designed and implemented using Verilog HDL with the help of a task for the full adder logic. The testbench verified that the ripple carry adder correctly computes the 4-bit sum and carry-out for various input combinations. The simulation results matched the expected outputs.
 
 The 4-bit Ripple Counter was successfully designed and implemented using Verilog HDL. A function was used to calculate the next state of the counter.
